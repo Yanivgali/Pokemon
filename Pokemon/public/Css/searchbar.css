@@ -1,0 +1,72 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Muli');
+* {
+    box-sizing: border-box;
+}
+:focus {
+    outline: none;
+}
+.container1{
+    padding: 0px;
+    width: auto;
+    height: auto;
+    margin-top:0;
+}
+
+.box {
+    width: 40%;
+    height: 58px;
+    margin: 20px auto;
+}
+
+.search-bar {
+    width: 55%;
+    margin: 40px auto;
+    line-height: 56px;
+    position: relative;
+}
+
+
+input[type="text"] {
+    width: 89%;
+    height: 33px;
+    padding: 0 10px;
+    color: #000;
+    border: 1px solid #BEBEBE;
+    border-radius: 30px 0 0 30px;
+    z-index: 2;
+}
+
+input:focus {
+    border: 1.1px solid #1c62b9;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+}
+
+.searchbutton {
+    position: absolute;
+    width: 20%;
+    height: 35px;
+    border: 3px solid #BEBEBE;
+    border-left: 0;
+    bottom:0;
+    border-radius: 6px 60px 60px 6px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    background-color: #E4E4E4;
+    z-index: 1
+}
+
+    .searchbutton i {
+        opacity: .5;
+        transition: all .07s ease-in-out
+    }
+
+.searchbutton:hover i {
+    opacity: .95
+}
+
+    .searchbutton:hover {
+        background-color: #35363a;
+        box-shadow: 0 1px 1px rgba(0,0,0,.15), inset 0 0 2px rgba(0,0,0,.05);
+        transition: all .07s ease-in-out
+    }
